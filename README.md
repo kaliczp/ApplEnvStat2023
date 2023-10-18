@@ -1,1 +1,1 @@
-# ApplEnvStat2023
+# Applied Environmental Statistics 2023
