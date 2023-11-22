@@ -2,6 +2,6 @@
 ?cor
 ## Generate data
 A <- rnorm(50, 10)
-B <- 2 * A + 50 + rnorm(50, 0, 0.2)
+B <- 2 * A + 50 + rnorm(50, 0, 5)
 plot(A, B)
 cor(A, B)
