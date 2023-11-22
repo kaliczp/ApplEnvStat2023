@@ -23,3 +23,10 @@ plot(Cpar ~ Apar, ABC)
 
 ## Direct reference of a vector in data.frame
 ABC$Cpar
+
+## Regression
+AB.lm <- lm(Bpar ~ Apar, data = ABC)
+AB.lm
+## See summaries
+summary(ABC)
+summary(AB.lm)
