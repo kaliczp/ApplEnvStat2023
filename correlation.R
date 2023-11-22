@@ -10,5 +10,11 @@ cor(A, B,meth = "spearman")
 ## Data frame
 
 AB <- data.frame(Apar = A, Bpar = B)
-
 plot(AB)
+
+ABC <- data.frame(Apar = A, Bpar = B, Cpar = rnorm(50))
+plot(ABC)
+## Select two variables with formula
+plot(Bpar ~ Apar, ABC)
+## Named argument
+plot(Bpar ~ Apar, data = ABC)
