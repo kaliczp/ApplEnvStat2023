@@ -2,5 +2,5 @@
 ?cor
 ## Generate data
 A <- rnorm(50, 10)
-B <- A
-plot(A, B, asp = 1)
+B <- A + rnorm(50, 0, 0.2)
+plot(A, B)
