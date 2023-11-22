@@ -7,3 +7,8 @@ plot(A, B)
 cor(A, B)
 ## Spearman correlation
 cor(A, B,meth = "spearman")
+## Data frame
+
+AB <- data.frame(Apar = A, Bpar = B)
+
+plot(AB)
