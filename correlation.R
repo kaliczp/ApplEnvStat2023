@@ -18,3 +18,8 @@ plot(ABC)
 plot(Bpar ~ Apar, ABC)
 ## Named argument
 plot(Bpar ~ Apar, data = ABC)
+
+plot(Cpar ~ Apar, ABC)
+
+## Direct reference of a vector in data.frame
+ABC$Cpar
