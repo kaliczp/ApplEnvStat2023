@@ -36,3 +36,13 @@ summary(AC.lm)
 ## Multiple regression
 ABC.lm <- lm(Bpar ~ Apar + Cpar, data = ABC)
 summary(ABC.lm)
+
+## Visual interpretation
+plot(AB.lm)
+
+## Plot the line
+plot(Bpar ~ Apar, data = ABC)
+abline(AB.lm)
+lines(ABC$Apar, predict(AB.lm))
+predict(AB.lm, data.frame(Apar = c(8,10)))
+      
