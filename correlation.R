@@ -30,3 +30,6 @@ AB.lm
 ## See summaries
 summary(ABC)
 summary(AB.lm)
+## Weaker model
+AC.lm <- lm(Cpar ~ Apar, data = ABC)
+summary(AC.lm)
