@@ -45,4 +45,9 @@ plot(Bpar ~ Apar, data = ABC)
 abline(AB.lm)
 lines(ABC$Apar, predict(AB.lm))
 predict(AB.lm, data.frame(Apar = c(8,10)))
-      
+
+## Some function for the deeper analisys
+coef(AB.lm)
+boxplot(resid(AB.lm))
+AB.lm.sum <- summary(AB.lm)
+AB.lm.sum$r.squared
