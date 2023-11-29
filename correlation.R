@@ -33,3 +33,6 @@ summary(AB.lm)
 ## Weaker model
 AC.lm <- lm(Cpar ~ Apar, data = ABC)
 summary(AC.lm)
+## Multiple regression
+ABC.lm <- lm(Bpar ~ Apar + Cpar, data = ABC)
+summary(ABC.lm)
