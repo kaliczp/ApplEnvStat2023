@@ -19,5 +19,13 @@ library(xts)
 ## Generate dates for dataset
 SopDate <- as.Date("1901-01-01")+0:44194
 SopDate <- seq(as.Date("1901-01-01"), as.Date("2021-12-31"), "day")
+?seq.Date
 summary(SopDate)
 plot(SopDate, Sop.Prec$r, typ="h")
+
+## xts time series
+SopPrec.xts <- xts(Sop.Prec$r, SopDate) 
+plot(SopPrec.xts)
+plot(SopPrec.xts['2021'], type = "h")
+plot(SopPrec.xts['2020'], type = "h")
+plot(SopPrec.xts['2020/2021'], type = "h")
