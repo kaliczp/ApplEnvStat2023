@@ -2,3 +2,7 @@
 ## Unzip into the folder for the course
 ## Import into your workspace based on R Data Import/Export manual 2nd section
 Sop.Prec <- read.table("r_h_Sopron_19012021.csv", sep = ";")
+summary(Sop.Prec)
+head(Sop.Prec)
+## Header is exists
+Sop.Prec <- read.table("r_h_Sopron_19012021.csv", sep = ";", head = TRUE)
